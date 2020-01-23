@@ -1,0 +1,505 @@
+<!-- WORKING MODEL WITH PARTICLE JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="particle.css" />
+  <title>Nikki Sato - Full Stack Developer</title>
+
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="particle.js"></script>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- typed.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="typed.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Nikki Sato Dev Portfolio</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tech-stack-section" class="nav-link">Tech Stack</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects-head-section" class="nav-link">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-head-section" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home-section particle-js" class="bg-cover">
+    <div id="particles-js">
+      <div class="home-inner container-home text-center">
+        <div class="row">
+          <div class="col text-center ">
+
+            <a href="#tech-stack-section" data-scroll="smooth" class="mouse-icon hidden-sm mb-5 mouse"><span
+                class="wheel"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="hero">
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </section>
+
+  <section id="home-section " class=" particles-js bg-cover cover">
+    <div class="home-inner container">
+      <div class="row">
+        <div class="col text-center m-5">
+          <div class="positioning">
+            <h1 class="display-4 text-center">
+              Hi! I'm Nikki Sato
+            </h1>
+            <h1 class="typed"> I'm a<span id="typed"></span></h1>
+          </div>
+        </div>
+      </div>
+
+      <a href="#tech-stack-section" data-scroll="smooth" class="mouse-icon hidden-sm"><span class="wheel"></span></a>
+    </div>
+    </div>
+  </section>
+
+  <section id="home">
+
+  </section>
+
+  <section id="tech-stack-section" class="tech-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">
+            Tech Stack
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TECH STACK -->
+  <section id="tech-stack" class=" tech-stack m-auto positioning ">
+    <div class="parent">
+    
+      <!-- <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="text-dark">Tech Stack</h1>
+              <div class="card-body ">
+                <div class="d-flex">
+                  <div class="p-4 text-dark">
+                    <h4>Language</h4>
+                    <li>Javascript</li>
+                    <li>HTML/CSS</li>
+                    <br>
+                    <h4>Frameworks</h4>
+                    <li>Express</li>
+                    <li>Node.js</li>
+                    <li>Mongoose</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <br>
+                    <h4>Databases</h4>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                  </div>
+
+                  <div class="p-4 text-dark">
+                    <h4>Testing Suites</h4>
+                    <li>TDD</li>
+                    <li>Jest/Q-Unit</li>
+                    <br />
+                    <h4>CI</h4>
+                    <li>Travis</li>
+                    <br>
+                    <h4>Other</h4>
+                    <li>Slack</li>
+                    <li>GitHub</li>
+                    <li>Heroku</li>
+                    <li>VSCode</li>
+                    <li>Adobe Creative Suite</li>
+
+                    <br />
+                    <li>Firebase</li>
+                    <li>Vue.js</li>
+                    <li>Flutter/Dart</li>
+                    <li>Gatsby.js</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+
+  <section id="projects-head-section" class=" mt-5 bg-primary projects-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">
+            Projects
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="projects-section" class="bg-primary text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card ">
+            <img class="card-img-top" src="img/create-section1.jpg" alt="" />
+
+            <div class="card-body">
+              <h3 class="text-dark">Pokedex</h3>
+              <p class="text-dark">
+                Fun Project with dealing with Pokemon Api
+                Built with Styled Components?
+              </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fas fa-link"></i>
+                    Live Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card ">
+            <img class="card-img-top" src="img/create-section1.jpg" alt="" />
+
+            <div class="card-body">
+              <h3 class="text-dark">Scenic Portland</h3>
+              <p class="text-dark">
+
+              </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-github fa-2"></i>
+                    Code
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fas fa-link"></i>
+                    Live Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card ">
+            <img class="card-img-top" src="img/create-section1.jpg" alt="" />
+
+            <div class="card-body">
+              <h3 class="text-dark">Nag Me App</h3>
+              <p class="text-dark">
+               Nag Me, a personalized reminder/todo list
+              </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fas fa-link"></i>
+                    Live Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card ">
+            <img class="card-img-top" src="img/create-section1.jpg" alt="" />
+
+            <div class="card-body">
+              <h3 class="text-dark">Guess Who?</h3>
+              <p class="text-dark">
+               Classic Guess who game with a twist
+              </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fas fa-link"></i>
+                    Live Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <img class="card-img-top" src="img/create-section1.jpg" alt="" />
+
+            <div class="card-body">
+              <h3 class="text-dark">BackEnd Project Current</h3>
+              <p class="text-dark">
+                Cover letter generation MadLib Style
+                Build with
+              </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-github"></i>
+                    Code
+                  </a>
+                </div>
+
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fas fa-link"></i>
+                    Live Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About HEAD -->
+
+  <section id="about-head-section" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">
+            About Me
+
+          </h1>
+
+          <!-- <p class="lead">
+            Hi I'm a Lover of Front End Design! and Love wandering streets of
+            portland capturing memories and reflections
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/Nikki-2.jpg" alt="" class="img-fluid mb-3 rounded" />
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li> Hi I'm a Lover of Front End Design! and Love wandering streets of
+              portland capturing memories and reflections</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-4">
+          <h5>Nikki Sato</h5>
+          <p>Copyright &copy; <span id="year"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $("#year").text(new Date().getFullYear());
+
+    // init Scrollspy
+    $("body").scrollspy({ target: "#main-nav" });
+
+    // Smooth Scrolling
+    $("#main-nav a").on("click", function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      }
+    });
+  </script>
+
+
+
+  <script>
+    var typed = new Typed("#typed", {
+      strings: [
+        "^1000 Front End Designer/Developer",
+        " ^1000 Photographer",
+        " ^1000 Full Stack Developer"
+      ],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "star",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 }
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false, mode: "repulse" },
+          onclick: { enable: false, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3
+          },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+
+</html>

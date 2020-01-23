@@ -1,0 +1,138 @@
+
+   /* ---- reset ---- */
+   body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  
+  } /* ---- particles.js container ---- */
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    background-image: url('./img/Nikki-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    opacity: 50%;
+    body: {z-index:0};
+  img.center {z-index:-1; margin-left:auto; margin-right:auto}
+  }
+  .about{
+      width: 100%; 
+  }
+  
+  .wrapper{
+      display:flex;
+      flex-wrap: wrap;
+  }
+  
+  .wrapper {
+      position: relative;
+  }
+  
+  .wrapper div {
+      position: absolute;
+      font-size: 20px;
+      top: 50px;
+      left: 50px;
+  }
+h1, .wheel{
+
+    color:white;
+}
+
+
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+.section-overlay {
+position: relative;
+}
+.section-overlay-in {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+margin: auto;
+}
+.section-overlay-r {
+right: 0;
+left: auto;
+}
+.section-overlay-l {
+left: 0;
+right: auto;
+} 
+
+.section-overlay-t {
+top: 0;
+bottom: auto;
+} 
+.section-overlay-b {
+top: auto;
+bottom: 0;
+} 
+
+.section-overlay-w-100 { width: 100%; }
+.section-overlay-w-50 { width: 50%; }
+.section-overlay-h-20 { height: 20%; }
+.section-overlay-h-30 { height: 30%; }
+.section-overlay-h-40 { height: 40%; }
+.section-overlay-h-50 { height: 50%; }
+.section-overlay-h-60 { height: 60%; }
+.section-overlay-h-70 { height: 70%; }
+.section-overlay-h-80 { height: 80%; }
+.section-overlay-h-90 { height: 90%; }
+
+@media (max-width: 1200px){ 
+.lg-section-overlay-w-100 { width: 100%; }
+.lg-section-overlay-w-50 { width: 50%; }
+.lg-section-overlay-h-20 { height: 20%; }
+.lg-section-overlay-h-30 { height: 30%; }
+.lg-section-overlay-h-40 { height: 40%; }
+.lg-section-overlay-h-50 { height: 50%; }
+.lg-section-overlay-h-60 { height: 60%; }
+.lg-section-overlay-h-70 { height: 70%; }
+.lg-section-overlay-h-80 { height: 80%; }
+.lg-section-overlay-h-90 { height: 90%; }
+}
+
+@media (max-width: 991px){ 
+.md-section-overlay-w-100 { width: 100%; }
+.md-section-overlay-w-50 { width: 50%; }
+.md-section-overlay-h-20 { height: 20%; }
+.md-section-overlay-h-30 { height: 30%; }
+.md-section-overlay-h-40 { height: 40%; }
+.md-section-overlay-h-50 { height: 50%; }
+.md-section-overlay-h-60 { height: 60%; }
+.md-section-overlay-h-70 { height: 70%; }
+.md-section-overlay-h-80 { height: 80%; }
+.md-section-overlay-h-90 { height: 90%; } 
+}
+
+@media (max-width: 767px){ 
+.sm-section-overlay-w-100 { width: 100%; }
+.sm-section-overlay-w-50 { width: 50%; }
+.sm-section-overlay-h-20 { height: 20%; }
+.sm-section-overlay-h-30 { height: 30%; }
+.sm-section-overlay-h-40 { height: 40%; }
+.sm-section-overlay-h-50 { height: 50%; }
+.sm-section-overlay-h-60 { height: 60%; }
+.sm-section-overlay-h-70 { height: 70%; }
+.sm-section-overlay-h-80 { height: 80%; }
+.sm-section-overlay-h-90 { height: 90%; }  
+}
