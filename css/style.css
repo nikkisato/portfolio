@@ -1,0 +1,215 @@
+body {
+  background: #333;
+  color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-width: 300px;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.7;
+}
+
+#home {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  min-width: 300px;
+}
+
+#home-section {
+  background-image: url("img/Nikki-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  min-height: 900px;
+  min-width: 300px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 900px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Wheel */
+
+.mouse-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  height: 42px;
+  width: 30px;
+  margin: auto;
+  z-index: 2;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  background: #000;
+}
+.mouse {
+  z-index: 3;
+  margin-top: 200px;
+}
+
+.mouse-icon .wheel {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 3px;
+  height: 8px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: down;
+  animation-name: down;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes down {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 15px;
+    opacity: 1;
+  }
+  60% {
+    top: 15px;
+    opacity: 0.6;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes down {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 15px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+.tech-stack {
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+
+.typed {
+  z-index: 999;
+  color: white;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.positioning {
+  margin-top: 170px;
+}
+
+.tech-stack {
+  margin-top: 500px;
+}
+
+@media (max-width: 568px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  #home {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 800px) {
+  .mouse-icon {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.container-home {
+  min-height: 800px;
+}
+
+.title {
+  position: relative;
+  margin-top: 200px;
+}
+
+.tech-section {
+  margin-top: 400px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-left: 150px;
+}
+
+.parent2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  margin-left: 150px;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+#home-section {
+  border-bottom: #008ed6 7px solid;
+  opacity: 0.7;
+}
+
+#tech-stack {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.7;
+  width: 1000px;
+  text-align: Center;
+}
+
+#about-head-section {
+  border-top: #008ed6 3px solid;
+  opacity: 0.7;
+  margin-top: 50px;
+  text-align: Center;
+}
